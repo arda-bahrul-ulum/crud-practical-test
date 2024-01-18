@@ -56,7 +56,7 @@ CREATE TABLE `migrations` (
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -65,7 +65,7 @@ CREATE TABLE `migrations` (
 
 LOCK TABLES `migrations` WRITE;
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
-INSERT INTO `migrations` VALUES (6,'2014_10_12_000000_create_users_table',1),(7,'2014_10_12_100000_create_password_reset_tokens_table',1),(8,'2019_08_19_000000_create_failed_jobs_table',1),(9,'2019_12_14_000001_create_personal_access_tokens_table',1);
+INSERT INTO `migrations` VALUES (6,'2014_10_12_000000_create_users_table',1),(7,'2014_10_12_100000_create_password_reset_tokens_table',1),(8,'2019_08_19_000000_create_failed_jobs_table',1),(9,'2019_12_14_000001_create_personal_access_tokens_table',1),(11,'2024_01_18_082101_create_student_table',2);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -143,7 +143,7 @@ CREATE TABLE `student` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -152,7 +152,7 @@ CREATE TABLE `student` (
 
 LOCK TABLES `student` WRITE;
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
-INSERT INTO `student` VALUES (11,'Margaret Hansen','2001-07-10','female','+1 (569) 322-7025','Quibusdam esse fugia','2024-01-17 12:30:04','2024-01-18 00:23:11'),(12,'Melodie Mack edit','1978-06-28','male','+1 (552) 959-8594','Aut consectetur et q','2024-01-17 12:30:17','2024-01-18 00:21:35'),(13,'Tanek Shaffer','2002-11-23','male','+1 (836) 298-2503','Eaque qui aliqua Ac','2024-01-18 00:17:37','2024-01-18 00:17:37'),(14,'Zachery Santana','2005-10-03','female','+1 (372) 903-6027','Dolor fuga Quia sed','2024-01-18 00:23:35','2024-01-18 00:23:35'),(15,'Vaughan Mcpherson','2005-05-24','male','+1 (569) 647-2932','Ut corporis est tene','2024-01-18 00:23:52','2024-01-18 00:23:52');
+INSERT INTO `student` VALUES (1,'Indira Bailey','1990-09-01','male','+1 (271) 598-1105','Ut tempore sit con','2024-01-18 01:24:58','2024-01-18 01:24:58'),(2,'Ocean Montoya edit','1999-06-05','male','+1 (446) 833-6951','Dolore ipsum eius no','2024-01-18 01:25:07','2024-01-18 01:25:18');
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -199,4 +199,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-18 15:16:22
+-- Dump completed on 2024-01-18 15:26:22
